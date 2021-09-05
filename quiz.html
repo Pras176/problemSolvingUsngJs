@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><u><b>Queraka Quiz</b></u></header>
+        <br>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="quiz.html">Quiz</a> |
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <hr>
+        <div class="myClass3">
+            <span style="padding-left: 8px;"><b>Quiz Questions and Answers</b></span><span style="margin-left: 450px;"><a href="">Click Here For Last Answer</a></span>
+            <div class="class">
+                <h><b>Q:What is the capital of India?</b> <mark style="background-color: green;"><b>Easy</b></mark></h><br>
+                <button onclick="document.getElementById('c1').innerHTML='New Delhi';">Answer</button><br><br>
+                <h  style="font-size: 15px;" id="c1"></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:What is the chemical formulae of water?</b> <mark><b>Medium</b></mark></h><br>
+                <button onclick="document.getElementById('c2').innerHTML='H<sub>2</sub>O';">Answer</button><br><br>
+                <h  style="font-size: 15px;" id="c2"></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:What is the solution of 2<sup>4</sup>?</b> <mark><b>Medium</b></mark></h><br>
+                <button onclick="document.getElementById('c3').innerHTML='16';">Answer</button><br><br>
+                <h  style="font-size: 15px;" id="c3"></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:Which tag is used to break the line?</b> <mark style="background-color: green;"><b>Easy</b></mark></h><br>
+                <button onclick="document.getElementById('c4').innerHTML='&lt br&gt  ';">Answer</button><br><br>
+                <h  style="font-size: 15px;" id="c4"></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:What is the Full form of WWW?</b> <mark><b>Medium</b></mark></h><br>
+                <button onclick="document.getElementById('c5').innerHTML='World Wide Web';">Answer</button><br><br>
+                <h  style="font-size: 15px;" id="c5"></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:Name any 3 countries Starts With Letter D?</b> <mark style="background-color: red;"><b>Hard</b></mark></h><br>
+                <button onclick="myFunction()">Answer</button><br><br>
+                <script>
+                    function myFunction(){
+                    let c6 = document.getElementById('c6');
+            
+                    // create new li element
+                    let li1 = document.createElement('li1');
+                    li1.textContent = '*   Denmark';
+                    let li2 = document.createElement('li2');
+                    li2.textContent = '  *   Dominican Republic';
+                    let li3 = document.createElement('li3');
+                    li3.textContent = '  *   Domocratic Republic of the Congo';
+                    // add it to the ul element
+                    c6.appendChild(li1);
+                    c6.appendChild(li2);
+                    c6.appendChild(li3);
+            
+                    console.log(c6.innerHTML);
+                    }
+                </script>
+                <h  style="font-size: 15px;"><ul type="square" id="c6">
+                    
+                </ul></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:What is the logo of Audi  From Below Images?</b> <mark style="background-color: red;"><b>Hard</b></mark></h><br>
+                <img src="3.png" style="width: 100px; height: 100px;">&nbsp&nbsp&nbsp&nbsp<img src="2.png" style="width: 100px; height: 100px;">&nbsp&nbsp&nbsp&nbsp<img src="1.png" style="width: 100px; height: 100px;"><br>
+                <button onclick="document.getElementById('c7').innerHTML='First(1)';">Answer</button><br><br>
+
+                <h  style="font-size: 15px;" id="c7"></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:What is the Missing Number?</b> <mark style="background-color: green;"><b>Easy</b></mark></h><br>
+                <table border="1px;">
+                    <tr>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>?</td>
+                        <td>18</td>
+                    </tr>
+                </table><br>
+                <button onclick="document.getElementById('c8').innerHTML='12';">Answer</button><br><br>
+
+                <h  style="font-size: 15px;" id="c8"></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:Which Movie Clip is this?</b> <mark><b>Medium</b></mark></h><br>
+                <video controls height="100" width="100">
+                    <source src="movie.mp4" type="video/mp4">
+                </video><br>
+                <button onclick="document.getElementById('c9').innerHTML='3 Idiots';">Answer</button><br><br>
+
+                <h  style="font-size: 15px;" id="c9"></h>
+
+            </div>
+            <div class="class">
+                <h><b>Q:Identify the song in the audio clip?</b> <mark style="background-color: red;"><b>Hard</b></mark></h><br>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                </audio><br>
+                <button onclick="document.getElementById('c10').innerHTML='Goa wale beech pe';">Answer</button><br><br>
+
+                <h  style="font-size: 15px;" id="c10"></h>
+
+            </div>
+        </div>
+            
+    </body>
+</html>
